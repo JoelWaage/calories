@@ -18,10 +18,7 @@ import { Meal } from './meal.model';
 export class AppComponent {
   public meals: Meal[];
   constructor(){
-    this.meals = [
-      new Meal("Dick's Burger", "Just a test", 550),
-      new Meal("Pagliacci Slice", "Another test", 355)
-    ];
+    this.meals = [];
   }
   mealSelected(clickedMeal: Meal): void {
     console.log('pops', clickedMeal);
