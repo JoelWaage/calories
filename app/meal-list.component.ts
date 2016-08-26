@@ -12,7 +12,8 @@ import { CaloriesPipe } from './calories.pipe';
   pipes: [CaloriesPipe],
   directives: [MealComponent, EditMealDetailsComponent, NewMealComponent],
   template: `
-    <new-meal (onSubmitNewMeal)="createMeal($event)"></new-meal>
+    <new-meal (onSubmitNewMeal)="createMeal($event)">
+    </new-meal>
     <select (change)="onChange($event.target.value)">
       <option value="allCalories" selected="selected">Show All Meals</option>
       <option value="under500">Show Meals Under 500 Calories</option>

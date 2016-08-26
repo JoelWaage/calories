@@ -3,6 +3,15 @@ body {
   color: #a7f6fb;
 }
 
+.jumbotron {
+  background-color: #0f1a19;
+  margin-top: -20px;
+  margin-left: -25px;
+  margin-right: -25px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
 .selected {
   color: #22bdf0;
 }
@@ -17,4 +26,22 @@ body {
 
 h4 {
   color: #a7f6fb;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.dish {
+  font-size: 1.3em;
+}
+
+@media(max-width: 767px) {
+  h1 {
+    font-size: 2em;
+  }
+
+  .new-form {
+    width: 200px;
+  }
 }
