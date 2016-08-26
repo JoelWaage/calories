@@ -6,7 +6,8 @@ import { Component, EventEmitter } from 'angular2/core';
   outputs: ['onMealSelect'],
   template: `
     <div *ngFor="#currentMeal of mealList"
-      (click)="mealClicked(currentMeal)">
+      (click)="mealClicked(currentMeal)"
+      [class.selected]="currentMeal === selectedMeal">
       <h2>{{ currentMeal.dish }}</h2>
       <h3>{{ currentMeal.details }}</h3>
       <h4>{{ currentMeal.calories }}</h4>
@@ -16,11 +17,13 @@ import { Component, EventEmitter } from 'angular2/core';
 export class MealListComponent {
   public mealList: Meal[];
   public onMealSelect: EventEmitter<Meal>;
+  public selectedMeal: Meal;
   constructor() {
     this.onMealSelect = new EventEmitter();
   }
   mealClicked(clickedMeal: Meal): void {
     console.log('kiddo', clickedMeal);
+    this.selectedMeal = clickedMeal;
     this.onMealSelect.emit(clickedMeal);
   }
 }
