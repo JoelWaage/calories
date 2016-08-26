@@ -7,7 +7,11 @@ body {
   color: #22bdf0;
 }
 
-.meal-form {
+.edit-form {
+  color: #0f1a19;
+}
+
+.new-form {
   color: #0f1a19;
 }
 
