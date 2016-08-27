@@ -9,7 +9,7 @@ import { Meal } from './meal.model';
       <h4>Enter Dish:</h4>
       <input placeholder="Dish" #newDish>
       <input placeholder="Notes" #newNotes>
-      <input placeholder="Calories" #newCalories>
+      <input placeholder="Calories" type="number" #newCalories>
       <button (click)="addMeal(newDish, newNotes, newCalories)" class="btn btn-info btn-sm">Add</button>
     </div>
   `
