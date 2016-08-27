@@ -9,7 +9,7 @@ import { Meal } from './meal.model';
       <hr>
       <li class="dish">{{ meal.dish }}</li>
       <li>{{ meal.notes }}</li>
-      <li>{{ meal.calories }}</li>
+      <li>{{ meal.calories }} Calories</li>
     </ul>
   `
 })
