@@ -15,7 +15,7 @@ import { CaloriesPipe } from './calories.pipe';
     <new-meal (onSubmitNewMeal)="createMeal($event)">
     </new-meal>
     <br>
-    <select (change)="onChange($event.target.value)">
+    <select class="select-form" (change)="onChange($event.target.value)">
       <option value="allCalories" selected="selected">Show All Meals</option>
       <option value="under500">Show Meals Under 500 Calories</option>
       <option value="over500">Show Meals Over 500 Calories</option>
